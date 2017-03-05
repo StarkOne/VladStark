@@ -22,6 +22,8 @@ gulp.task('scripts', function() {
 		'app/libs/js/EasePack.min.js',
 		'app/libs/js/rAF.js',
 		'app/libs/js/demo-1.js',
+	//	'app/libs/motionblur/motionblur.js',
+		'app/libs/TweenMax/TweenMax.min.js',
 		'app/js/common.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))
