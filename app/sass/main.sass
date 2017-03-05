@@ -70,13 +70,13 @@ body
 	transform: translate3d(-50%, -50%, 0)
 	&::after
 		content: "by Vlad"
-		width: 96px
+		width: 153px
 		font-size: 15px
 		height: 15px
-		right: -4%
+		right: -6%
 		text-shadow: 0 0 15px #00B7FF
 		position: absolute
-		bottom: -20%
+		bottom: -16%
 .demo-1 .main-title, .demo-3 .main-title
 	text-transform: uppercase
 	font-size: 4.2em
@@ -118,10 +118,6 @@ a
 	text-decoration: none
 	&:hover, &:focus
 		color: #34495e
-
-section
-	padding: 1em
-	text-align: center
 
 p.ref
 	text-align: center
@@ -236,7 +232,7 @@ p.ref
 	z-index: 10
 	left: -400px
 	bottom: 0
-	background: rgba(230, 230, 230, .2)
+	background: rgba(0,0,0,.7)
 	line-height: 100vh
 	width: 400px
 
@@ -326,6 +322,6 @@ p.ref
 		transform: translateY(0) rotate(-45deg)
 .content
 	z-index: 1
-
 @import "menu"
+@import "section/sectionAbout"
 @import "media" // Всегда в конце
