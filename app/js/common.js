@@ -1,5 +1,9 @@
 $(function() {
 
+	var containerEl = document.querySelector('.containerMix');
+
+	var mixer = mixitup(containerEl);
+
 	var menuIsOpen=false,
 		$menu=$(".menu"),
 		$menuItem=$(".menu-item"),
