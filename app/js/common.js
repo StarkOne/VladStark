@@ -14,6 +14,15 @@ $(function() {
 		dragEndSpeed : 600
 	});
 
+	 $(".js-nav a").on("click", function(e){
+        e.preventDefault();
+        var currentBlock = $(this).attr("href"),
+            currentBlockOffset = $(currentBlock).offset().top;
+
+        $("html, body").animate({
+            scrollTop: currentBlockOffset
+        }, 500);
+    });
 
 	var menuIsOpen=false,
 		$menu=$(".menu"),
