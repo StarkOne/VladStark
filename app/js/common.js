@@ -1,8 +1,19 @@
 $(function() {
 
-	var containerEl = document.querySelector('.containerMix');
+	$(".owl-carousel").owlCarousel({
+		items : 1,
+		nav : true,
+		navText : "",
+		loop : true,
+		autoplay : true,
+		autoplayHoverPause : true,
+		fluidSpeed : 600,
+		autoplaySpeed : 600,
+		navSpeed : 600,
+		dotsSpeed : 600,
+		dragEndSpeed : 600
+	});
 
-	var mixer = mixitup(containerEl);
 
 	var menuIsOpen=false,
 		$menu=$(".menu"),

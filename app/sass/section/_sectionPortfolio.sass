@@ -3,62 +3,46 @@
 @import "libs"
 @import "vars"
 
-.portfolio
-	padding: 30px 0px
-.containerMix
-	font-size: 0.1px
-	&:after
-		content: ''
-		display: inline-block
-		width: 100%
-.mix
-	display: inline-block
-	vertical-align: top
-	width: 100%
-	background: #fff
+.portfolio__title-wrap
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: center
 	margin-bottom: 20px
+.portfolio__title
+	font-size: em(30px)
+	padding: 19px 44px
+	border: 3px solid #ccc 
+	box-shadow: 0 0 10px #ccc inset
+.slider__link
+	display: block
+.owl__item
 	position: relative
-	&:before
-		content: ''
-		display: inline-block
-		padding-top: 56.25%
-	width: calc(100%/2 - (((2 - 1) * 1rem) / 2))
-.controls
-	text-align: center
-	margin-bottom: 30px
-	.buttom
-		border: none
-.containerMix__link
-	display: inline-block
+.slider__photo
+	img
+		min-height: 570px
+.slider__text
+	background: #000
+	bottom: 0
+	padding: 5px 0px
+	opacity: .8
+	color: #FFF
 	width: 100%
-	background: #555
-	height: 326px
-.controls__button
-	background: #fff
-	border: 1px solid #ccc
-	border-radius: 25px
-	box-shadow: 0 0 5px #ccc 
-	padding: 10px 25px
-	margin: 7px 5px
-	&:hover
-		box-shadow: 0 0 50px #555
-	&.mixitup-control-active
-		box-shadow: 0 0 50px 2px #312A6C
-.link1
-	background: url(../img/FSEtfJhFtfw.jpg) no-repeat center
-	background-size: cover
-.link2
-	background: url(../img/Mr.-Robot-for-desktop.png) no-repeat center
-	background-size: cover
-.link3
-	background: url(../img/mr__robot_evil_corp_by_valencygraphics-d9815gi.jpg) no-repeat center
-	background-size: cover
-.link4
-	background: url(../img/7024.jpg) no-repeat center
-	background-size: cover
-.link5
-	background: url(../img/ads11.jpg) no-repeat center
-	background-size: cover
-.link6
-	background: url(../img/1485312342556.jpg) no-repeat center
-	background-size: cover
+	text-align: center
+	left: 0
+	position: absolute
+
+.owl-controls
+	text-align: center
+	margin-top: 20px
+	.owl-dot
+		width: 15px
+		height: 15px
+		margin: 0 3px
+		background-color: #ccc
+		display: inline-block
+		border-radius: 10em
+		&.active
+			box-shadow: 0 0 15px #00b7ff inset
