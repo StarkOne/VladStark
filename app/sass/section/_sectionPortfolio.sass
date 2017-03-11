@@ -3,19 +3,23 @@
 @import "libs"
 @import "vars"
 
-.portfolio__title-wrap
+.portfolio__content-wrap
 	display: -webkit-flex
 	display: -moz-flex
 	display: -ms-flex
 	display: -o-flex
 	display: flex
 	justify-content: center
-	margin-bottom: 20px
 .portfolio__title
 	font-size: em(30px)
 	padding: 19px 44px
 	border: 3px solid #ccc 
+	margin: 0
 	box-shadow: 0 0 15px #ccc inset
+.portfolio--desc
+	margin: 10px 0px
+	font-size: em(20px)
+	opacity: .7
 .slider__link
 	display: block
 .owl__item
@@ -62,3 +66,5 @@
 			right: 20px
 			left: auto
 			background-position: -16px 0
+.portfolio__desc
+	display: block
