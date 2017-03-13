@@ -113,5 +113,6 @@ $(function() {
 	$menuToggle.click(function(){
 		toggleMenu();
 	});
+	$(".loader").fadeOut();
 
 });
