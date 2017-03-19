@@ -113,10 +113,9 @@ $(function() {
 	$menuToggle.click(function(){
 		toggleMenu();
 	});
-	$(".loader").fadeOut();
 
 });
 
 $(window).on('load', function () {
-	$(".loader").fadeOut();
+	$(".loader-wrap").fadeOut("2000");
 });
