@@ -117,5 +117,5 @@ $(function() {
 });
 
 $(window).on('load', function () {
-	$(".loader-wrap").fadeOut("2000");
+	$(".loader-wrap").fadeOut("");
 });
