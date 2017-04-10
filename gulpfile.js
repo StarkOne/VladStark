@@ -25,6 +25,7 @@ gulp.task('scripts', function() {
 	//	'app/libs/motionblur/motionblur.js',
 		'app/libs/TweenMax/TweenMax.min.js',
 		'app/libs/owl/owl.carousel.min.js',
+		'app/libs/fancybox/jquery.fancybox.min.js',
 		'app/js/common.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))
