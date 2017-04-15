@@ -4,12 +4,10 @@
 
 .about
 	margin-bottom: 120px
-.about__content
 	padding: 100px 0px 20px
 .about__img
 	box-shadow: 0 0 75px #2E3192
 .about__text
-	margin: 20px 0px
 	text-align: center
 .about__desc
 	text-align: right
@@ -17,3 +15,72 @@
 	font-size: em(45px)
 	margin: 0
 	text-shadow: 0 0 7px #00B7FF
+.skills-list
+	list-style: none
+	margin: 0
+	padding: 0
+.skills__item
+	height: 50px
+	padding: 10px 0
+	text-align: left
+	margin-bottom: 20px
+.skills__line
+	height: 10px
+	width: 100%
+	box-shadow: 0 0 30px #465461 inset
+.skills__title
+	margin: 0
+	padding: 0
+	font-size: 18px
+	text-shadow: 0 0 7px #00B7FF
+.skills__filling
+	height: 10px
+	background: #00b7ff
+	width: 70%
+	box-shadow: 0 0 30px #00b7ff
+	position: relative
+	&:after
+		content: "70%"
+		height: 30px
+		width: 50px
+		background: #ccc
+		box-shadow: 0 0 30px #00b7ff inset
+		display: block
+		position: absolute
+		bottom: -39px
+		text-align: center
+		color: #444
+		font-weight: bold
+		padding-top: 5px
+		right: -26px
+		border-radius: 35px
+.skills__item--css
+	.skills__filling
+		width: 65%
+		&:after
+			content: "65%"
+.skills__item--js
+	.skills__filling
+		width: 40%
+		&:after
+			content: "40%"
+.skills__item--jQuery
+	.skills__filling
+		width: 55%
+		&:after
+			content: "55%"
+.skills__item--Sass
+	.skills__filling
+		width: 70%
+		&:after
+			content: "70%"
+.skills__item--Bootstrap
+	.skills__filling
+		width: 70%
+		&:after
+			content: "70%"
+.skills__item--Bootstrap
+	.skills__filling
+		width: 55%
+		&:after
+			content: "55%"
