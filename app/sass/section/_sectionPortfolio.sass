@@ -10,12 +10,6 @@
 	display: -o-flex
 	display: flex
 	justify-content: center
-.portfolio__title
-	font-size: em(30px)
-	padding: 19px 44px
-	border: 3px solid #ccc 
-	margin: 0
-	box-shadow: 0 0 15px #ccc inset
 .portfolio--desc
 	margin: 10px 0px
 	font-size: em(20px)
@@ -69,3 +63,36 @@
 .portfolio__desc
 	display: block
 	line-height: 5px
+.portfolio__title
+	//font-size: em(30px)
+	//border: 3px solid #ccc 
+	margin: 0
+	box-shadow: 0 0 15px #ccc inset
+//test
+
+@keyframes sparkle
+	from
+		background-position: 0% 100%
+	to
+		background-position: 200% 100%
+
+.test
+	background: white
+	display: inline-block
+	padding: 19px 44px
+	border-radius: 4px
+	position: relative
+	&:before
+		animation: sparkle 4s infinite linear
+		background: linear-gradient(90deg, #7FEFBD 0%, #FFF689 11%, #EC0B43 22%, #7FEFBD 33%, #FFF689 44%, #EC0B43 55%, #7FEFBD 66%, #FFF689 77%, #EC0B43 88%, #7FEFBD 100%)
+		background-size: 300% 100%
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		border-radius: 4px
+		filter: blur(3px)
+		z-index: -1
+		transform: scale(0.99) translateY(3px)

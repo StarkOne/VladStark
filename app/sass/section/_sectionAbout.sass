@@ -35,9 +35,9 @@
 	text-shadow: 0 0 7px #00B7FF
 .skills__filling
 	height: 10px
-	background: #00b7ff
+	background: #7b00e0
 	width: 70%
-	box-shadow: 0 0 30px #00b7ff
+	box-shadow: 0 0 30px #7b00e0
 	position: relative
 	&:after
 		content: "70%"
@@ -84,3 +84,87 @@
 		width: 55%
 		&:after
 			content: "55%"
+.links
+	border: 1px solid #000
+	margin-top: 20px
+	height: 150px
+//links
+$timing        : 265ms
+$iconColor     : #ff003c
+$accent        : #c648c8
+$grape         : #7b00e0
+$orchid        : #ae31d9
+
+@mixin transformScale($size: 1) 
+		transform: scale($size)
+		-ms-transform: scale($size)
+		-webkit-transform: scale($size)
+.social-container
+	margin-top: 20px
+	text-align: center
+.social-icons 
+	padding: 0
+	list-style: none
+	margin: 1em
+	li 
+			display: inline-block
+			margin: 0.15em
+			position: relative
+			font-size: 1.2em
+	i 
+			color: #fff
+			position: absolute
+			top: 21px
+			left: 21px
+			transition: all $timing ease-out
+	a 
+			display: inline-block
+		
+			&:before 
+					@include transformScale()
+					content: " "
+					width: 60px
+					height: 60px
+					border-radius: 100%
+					display: block
+					background: linear-gradient(45deg, $iconColor, $accent)
+					transition: all $timing ease-out
+			&:hover:before 
+					transform: scale(0)
+					transition: all $timing ease-in
+			&:hover i 
+					@include transformScale(2.2)
+					color: $iconColor
+					background: -webkit-linear-gradient(45deg, $iconColor, $accent)
+					-webkit-background-clip: text
+					-webkit-text-fill-color: transparent
+					transition: all $timing ease-in
+	a.social-square 
+		
+			&:before 
+					background: linear-gradient(45deg, $grape, $orchid)
+					border-radius: 10%
+			&:hover:before 
+					transform: rotate(-180deg)
+					-ms-transform: rotate(-180deg)
+					-webkit-transform: scale(-180deg)
+					border-radius: 100%
+			&:hover i 
+					@include transformScale(1.6)
+					color: #fff
+					transform: scale(1.6)
+					-webkit-text-fill-color: #fff
+.social-icons
+	.fa-instagram
+		top: 22px
+		left: 22px
+	.fa-github
+		left: 23px
+	.fa-soundcloud
+		left: 19px
+	.fa-codepen
+		left: 22px
+	.fa-dribbble
+		left: 22px
+
+
